@@ -50,16 +50,6 @@ class rekins():
 
     pass
 
-veltijums = input("uzraksti veltijumu:")
 
-izmeri = input("ievadi ladites izmerus\n garums,platums,augstums")
-
-print(izmeri)
-print(type(izmeri))
-print(izmeri.split(","))
-sadal = izmeri.split(",")
-print(sadal[0])
-print(sadal[1])
-print(sadal[2])
 
 
