@@ -9,6 +9,7 @@ izmers = input("Ladites izmers - platums,garums,augstums - milimetros(Raksti ves
 print("-"*50)
 materials = input("Kokmateriala cena EUR/n2:")
 class rekins():
+  
   def __init__(self,klients,veltijums,izmers,materials):
     self.klients=klients
     self.veltijums=veltijums
@@ -46,9 +47,15 @@ class rekins():
 
 
 
+  def saglabat(self):
+    import csv
 
+    with open(f"{self.klients}.csv","w",newline = "")as file:
+      writer = csv.writer(file)
+      writer.writerow = (["klienta vards","veltijums","izmeri","materiala cena"])
 
     pass
+
 
 
 
